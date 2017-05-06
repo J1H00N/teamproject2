@@ -1,0 +1,91 @@
+<div class="main-wrapper">
+    <div class="app" id="app">
+        <header class="header">
+            <div class="header-block header-block-collapse hidden-lg-up">
+                <button class="collapse-btn" id="sidebar-collapse-btn">
+		        <i class="fa fa-bars"></i>
+	            </button>
+	        </div>
+            
+            <div class="header-block header-block-search hidden-sm-down">
+                <form role="search">
+                    <div class="input-container"> <i class="fa fa-search"></i> <input type="search" placeholder="Search">
+                        <div class="underline"></div>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <aside class="sidebar">
+            <div class="sidebar-container">
+                <div class="sidebar-header">
+                    <div class="brand">
+                        <div class="logo">
+                            <i class="fa fa-cutlery " aria-hidden="true"></i>
+                        </div> 
+                        노맛위키
+                    </div>
+                </div>
+                <nav class="menu">
+                    <ul class="nav metismenu" id="sidebar-menu">
+                        <li>
+                            <%= link_to "메인페이지", root_path %>
+                        </li>
+                        <li>
+                            <%= link_to "등록된 집", gajimas_path %>
+                        </li>
+                        <li>
+                            <%= link_to "랜덤 노맛", random_path %>
+                        </li>
+                        <li>
+                            <%= link_to "추가하기", new_gajima_path%>
+                        </li>
+                        <li class = "active">
+                            <%= link_to "이용방법", howtouse_path %>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="sidebar-overlay" id="sidebar-overlay">
+        </div>
+        <article class="content dashboard-page">
+            <div class="container">
+                <section class = "mainText">
+                    <h3><span class="hard">노맛위키</span>의 이용방법입니다.</h3>
+                        <p>노맛위키는 모두가 함께 만들어갑니다. 모두가 자유롭게 등록할 수 있고 수정할 수 있는 권리를 가집니다.</p>
+                        <p>또한, 모두의 자율성을 보장할 수 있는 최소한의 운영원칙을 가지고 있습니다.</p>
+                </section>
+                <section class = "mainText">
+                    <h3>
+                        노맛위키는 사용자들의 자유와 비밀을 보장합니다.
+                    </h3>
+                    <p>
+                        노맛위키의 서버는 모두 해외에 있습니다. 기존 블로그나 페이스북에 해당 가게에 대한 솔직한 의견을 썼을 경우 업무방해등의 이유로 글을 삭제해야하거나 법적분쟁이 있을 수 있었습니다.
+                        하지만, 노맛위키는 DB가 해외에 있기 때문에 수사범위의 밖에 있어 사용자들의 자유와 비밀을 확실하게 보장합니다.
+                    </p>
+                    <br>
+                    <h3>
+                        노맛위키는 공익을 지향합니다.
+                    </h3>
+                    <p>
+                        특정 가게와 거래를 통해 광고하거나 의도적으로 비판하지 않습니다. 노맛위키는 맛없는 것들을 피할 수 있는 우리 모두의 권리를 지킬 수 있도록 하기위해 최대한의 노력을 하겠습니다.
+                        또한, 이를 고의적으로 방해할 경우 운영원칙에 의해 이용이 제한될 수 있습니다. 
+                    </p>
+                    <br>
+                    <h3>
+                        노맛위키에서 매너를 지켜주세요.
+                    </h3>
+                    <p>
+                        노맛위키는 사용자들의 자유와 비밀을 최대한으로 보장하고 있습니다. 모두가 글을 쓰고 수정할 수 있는 권리를 가지고 있는 만큼 서로의 권리를 지켜주시길 바랍니다.
+                    </p>
+                </section>
+                <section class = "mainText">
+                    
+                </section>
+            </div>
+        </article>
+        <footer class="footer">
+
+        </footer>    
+    </div>
+</div>

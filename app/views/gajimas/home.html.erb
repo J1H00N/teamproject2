@@ -1,0 +1,126 @@
+
+
+        <div class="main-wrapper">
+            <div class="app" id="app">
+                
+                <header class="header">
+                    <div class="header-block header-block-collapse hidden-lg-up"> <button class="collapse-btn" id="sidebar-collapse-btn">
+    			<i class="fa fa-bars"></i>
+    		</button> </div>
+                    <div class="header-block header-block-search hidden-sm-down">
+                        <form role="search" action="https://cse.google.com:443/cse/publicurl?cx=016151413329891946068:dd_05c-e8g8">
+                            <div class="input-container"> <i class="fa fa-search"></i> <input type="search" placeholder="Search">
+                                <div class="underline"></div>
+                            </div>
+                        </form>
+                    </div>
+                </header>
+
+                <aside class="sidebar">
+                    <div class="sidebar-container">
+                        <div class="sidebar-header">
+                            <div class="brand">
+
+                                <div class="logo"><i class="fa fa-cutlery " aria-hidden="true"></i>
+                                </div> 
+                                노맛위키
+                            </div>
+                        </div>
+                        <nav class="menu">
+                    <ul class="nav metismenu" id="sidebar-menu">
+                        <li class="active">
+                            <%= link_to "메인페이지", root_path %>
+                        </li>
+                        <li>
+                            <%= link_to "등록된 집", gajimas_path %>
+                        </li>
+                        <li>
+                            <%= link_to "랜덤 노맛", random_path %>
+                        </li>
+                        <li>
+                            <%= link_to "추가하기", new_gajima_path%>
+                        </li>
+                        <li>
+                            <%= link_to "이용방법", howtouse_path %>
+                        </li>
+                    </ul>
+                        </nav>
+                    </div>
+                </aside>
+                
+                <div class="sidebar-overlay" id="sidebar-overlay"></div>
+                <article class="content dashboard-page">
+                  <div class="container">
+                    <section class = "mainText">
+                        <h3><span class="hard">노맛위키</span>에 오신것을 환영합니다.</h3>
+                        <p>위 사이트는 개인적인 의견으로 구성된 곳입니다. </p>
+                        <p>검증되지 않았거나 개개인의 입맛 차이에 따라 다른 평가가 이루어 질 수 있습니다. </p>
+                    </section>
+                    <section class="mainText2">
+                        <div class="row first">
+                            <div class="col col-xs-12 col-sm-12 col-md-5 col-xl-5">
+                                <div class="introduce">
+                                <h4 class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i> 소개</h4>
+                                <p>맛집, 체험, 데이트코스 등 을 찾을때 우리가 정보를 얻는 채널은 한정적이다. 네이버, 페이스북 솔직히 이 두곳이 가장 크다. 하지만, 광고로 점철된 네이버 블로그 후기, 페이스북 페이지에 맛집이라고 가보면 실망스러운 일을 겪게되기 마련이다.
+
+우리는 돈주고 가게를 소개하는 현재 상황과 진실되지 못한 맛과 재미를 허위로 광고하는 사장들을 피하기 위해, 우리의 소중한 권리를 지키기 위해 이 서비스를 만든다.
+</p>
+                                </div>
+                            </div>
+                            <div class="col col-xs-12 col-sm-12 col-md-7 col-xl-5">
+                                <div class="participate">
+                                <h4 class="icon"><i class="fa fa-check-square-o" aria-hidden="true"></i> 참여하기</h4>
+                                <P>노맛위키는 이 사이트를 기반으로 모든 사람들이 함께 만들어가는 
+                                가면 안되는 집 백과사전이라 볼 수 있습니다. 위 사이트는 중립적이고 검증 가능한
+                                맛없는 곳들에 관한 정보를 제공하는 목적으로 하는 프로젝트로, 누구나 참여하며 문서를 수정하고
+                                발전시킬 수 있습니다. <br>
+                                모든 사용자는 사이트에 직접 참여해 객관성 있는 입맛과, 중립적인 판단으로 노맛위키의 기본적인
+                                규칙을 준 수 하여 문서를 수정할 수 있습니다. 맛이없는 곳들을 과감하게 등록하고 편집 해주세요.</P>
+                                <button type="button" class="btn btn-default newpost"><%= link_to "새 글 등록하러가기", new_gajima_path %></button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class = "mainText">
+                        <h3><span class="hard">개발 후기</span></h3>
+                        <div>                  
+                            <h4>
+                                김지훈
+                            </h4>
+                            <p>
+                                이번 프로젝트에서 기획과 CRUD 기능, 랜덤 노맛을을 구현했습니다. 
+                                아는 부분에서 최대한 재밌는 프로젝트를 하자는 것이 첫번째 목표였고 CRUD를 바탕으로 해서 노맛위키를 기획했습니다. 추가하고 싶은 기능들이 더 많았지만, 아쉽게도 시간이 그렇게 많지 않아 최소한의 핵심기능만
+                                구현했습니다.
+                            </p>
+                            <br>
+                            <h4>
+                                송지연
+                            </h4>
+                            <p>
+                                기본 기능 외에 추가로 gem파일 사용을 맡았습니다.
+                                이번에 배우게 될 paperclip 적용을 해봤는데 찾아보면서 하다보니 gem 적용 패턴을 알게 되었습니다.
+                                like button과 순위 등, 추가하고자 했던 기타 기능도 시도해 보면 좋을 것 같습니다. 
+                            </p>
+                            <h4>
+                                김승하
+                            </h4>
+                            <p>
+                            html/css파트를 맡았습니다. 외부 템플릿을 가져와서 잘 활용하고 싶었는데 생각보다
+                            활용이 어려운걸 알았습니다. 외부 템플릿을 가져오게 되면 html과 css파일이 여러개 이기 때문에
+                            필요없는 것을 삭제하고 필요한 것만 가져오는 것이 어려웠습니다. 여러개를 시도해보다가 템플릿을 적용해봤지만
+                            아직까지 필요없는 css를 골라내지 못해서 이건 차차 해결해야 될 것 같습니다.
+                            html과 css를 구성할 때 네모칸 크기를 조정해야 하는데 px, em, %의 차이에 관하여 찾아보았고
+                            기기마다 각각 다르게 적용할 수 있으려면 px가 아닌 em이나 %를 활용해야 한다는 것도 알았습니다.
+                            별점을 매기는 기능, 검색하는 기능, 최근 글을 보여주는 기능과 같은 다양한 기능을 구상은 해보았는데
+                            시간적 문제와 아직 배우지 못해서 다 하지 못한것이 아쉬웠습니다. 시간이 될 때 하나씩 해봐야 할 것 같습니다. 
+                            </p>
+                        </div>
+                    </section>
+                    
+                  </div><!--container-->
+                </article>
+                <footer class="footer">
+
+                </footer>
+            </div>
+        </div>
